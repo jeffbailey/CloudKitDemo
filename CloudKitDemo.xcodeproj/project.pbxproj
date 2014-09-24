@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		1F41B00219CF379800CF376E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41B00119CF379800CF376E /* main.m */; };
 		1F41B00519CF379800CF376E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41B00419CF379800CF376E /* AppDelegate.m */; };
-		1F41B00819CF379800CF376E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41B00719CF379800CF376E /* ViewController.m */; };
+		1F41B00819CF379800CF376E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41B00719CF379800CF376E /* MainViewController.m */; };
 		1F41B00B19CF379800CF376E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F41B00919CF379800CF376E /* Main.storyboard */; };
 		1F41B00D19CF379800CF376E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F41B00C19CF379800CF376E /* Images.xcassets */; };
 		1F41B01019CF379800CF376E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F41B00E19CF379800CF376E /* LaunchScreen.xib */; };
 		1F41B01C19CF379800CF376E /* CloudKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41B01B19CF379800CF376E /* CloudKitDemoTests.m */; };
+		1F41B02719CF37C200CF376E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F41B02619CF37C200CF376E /* CloudKit.framework */; };
+		1F41B02A19CF38C300CF376E /* FFTCloudService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41B02919CF38C300CF376E /* FFTCloudService.m */; };
+		1F41B02B19CF38C300CF376E /* FFTCloudService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41B02919CF38C300CF376E /* FFTCloudService.m */; };
+		1F90DD2519D23E0500061DB3 /* UIViewController+FFTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90DD2419D23E0500061DB3 /* UIViewController+FFTUtils.m */; };
+		1F9D696D19CF4CAA0004E8E0 /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D696C19CF4CAA0004E8E0 /* ContactsTableViewController.m */; };
+		1F9D696E19CF4CAA0004E8E0 /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D696C19CF4CAA0004E8E0 /* ContactsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +38,22 @@
 		1F41B00119CF379800CF376E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F41B00319CF379800CF376E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F41B00419CF379800CF376E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1F41B00619CF379800CF376E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1F41B00719CF379800CF376E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F41B00619CF379800CF376E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1F41B00719CF379800CF376E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		1F41B00A19CF379800CF376E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F41B00C19CF379800CF376E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1F41B00F19CF379800CF376E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1F41B01519CF379800CF376E /* CloudKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F41B01A19CF379800CF376E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F41B01B19CF379800CF376E /* CloudKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudKitDemoTests.m; sourceTree = "<group>"; };
+		1F41B02519CF37A400CF376E /* CloudKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CloudKitDemo.entitlements; sourceTree = "<group>"; };
+		1F41B02619CF37C200CF376E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		1F41B02819CF38C300CF376E /* FFTCloudService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTCloudService.h; sourceTree = "<group>"; };
+		1F41B02919CF38C300CF376E /* FFTCloudService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTCloudService.m; sourceTree = "<group>"; };
+		1F90DD2319D23E0500061DB3 /* UIViewController+FFTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FFTUtils.h"; sourceTree = "<group>"; };
+		1F90DD2419D23E0500061DB3 /* UIViewController+FFTUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FFTUtils.m"; sourceTree = "<group>"; };
+		1F9D696B19CF4CAA0004E8E0 /* ContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
+		1F9D696C19CF4CAA0004E8E0 /* ContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F41B02719CF37C200CF376E /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 		1F41AFF319CF379800CF376E = {
 			isa = PBXGroup;
 			children = (
+				1F41B02619CF37C200CF376E /* CloudKit.framework */,
 				1F41AFFE19CF379800CF376E /* CloudKitDemo */,
 				1F41B01819CF379800CF376E /* CloudKitDemoTests */,
 				1F41AFFD19CF379800CF376E /* Products */,
@@ -81,14 +97,21 @@
 		1F41AFFE19CF379800CF376E /* CloudKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1F41B02519CF37A400CF376E /* CloudKitDemo.entitlements */,
 				1F41B00319CF379800CF376E /* AppDelegate.h */,
 				1F41B00419CF379800CF376E /* AppDelegate.m */,
-				1F41B00619CF379800CF376E /* ViewController.h */,
-				1F41B00719CF379800CF376E /* ViewController.m */,
+				1F41B00619CF379800CF376E /* MainViewController.h */,
+				1F41B00719CF379800CF376E /* MainViewController.m */,
+				1F9D696B19CF4CAA0004E8E0 /* ContactsTableViewController.h */,
+				1F9D696C19CF4CAA0004E8E0 /* ContactsTableViewController.m */,
 				1F41B00919CF379800CF376E /* Main.storyboard */,
 				1F41B00C19CF379800CF376E /* Images.xcassets */,
 				1F41B00E19CF379800CF376E /* LaunchScreen.xib */,
 				1F41AFFF19CF379800CF376E /* Supporting Files */,
+				1F41B02819CF38C300CF376E /* FFTCloudService.h */,
+				1F41B02919CF38C300CF376E /* FFTCloudService.m */,
+				1F90DD2319D23E0500061DB3 /* UIViewController+FFTUtils.h */,
+				1F90DD2419D23E0500061DB3 /* UIViewController+FFTUtils.m */,
 			);
 			path = CloudKitDemo;
 			sourceTree = "<group>";
@@ -168,6 +191,12 @@
 				TargetAttributes = {
 					1F41AFFB19CF379800CF376E = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 47SBRQVXRC;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					1F41B01419CF379800CF376E = {
 						CreatedOnToolsVersion = 6.0;
@@ -219,9 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F41B00819CF379800CF376E /* ViewController.m in Sources */,
+				1F41B02A19CF38C300CF376E /* FFTCloudService.m in Sources */,
+				1F41B00819CF379800CF376E /* MainViewController.m in Sources */,
+				1F9D696D19CF4CAA0004E8E0 /* ContactsTableViewController.m in Sources */,
 				1F41B00519CF379800CF376E /* AppDelegate.m in Sources */,
 				1F41B00219CF379800CF376E /* main.m in Sources */,
+				1F90DD2519D23E0500061DB3 /* UIViewController+FFTUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F41B02B19CF38C300CF376E /* FFTCloudService.m in Sources */,
 				1F41B01C19CF379800CF376E /* CloudKitDemoTests.m in Sources */,
+				1F9D696E19CF4CAA0004E8E0 /* ContactsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,9 +379,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudKitDemo/CloudKitDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CloudKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -355,9 +393,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudKitDemo/CloudKitDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CloudKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -414,6 +456,7 @@
 				1F41B02119CF379800CF376E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F41B02219CF379800CF376E /* Build configuration list for PBXNativeTarget "CloudKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +465,7 @@
 				1F41B02419CF379800CF376E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
