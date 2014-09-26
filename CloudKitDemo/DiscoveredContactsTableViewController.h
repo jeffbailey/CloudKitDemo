@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FFTCloudService.h"
 
-@interface ContactsTableViewController : UITableViewController
+@interface DiscoveredContactsTableViewController : UITableViewController
 
 @property (nonatomic, strong) FFTCloudService *cloudService;
 

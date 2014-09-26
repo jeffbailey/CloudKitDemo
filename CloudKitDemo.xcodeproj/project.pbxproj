@@ -18,8 +18,8 @@
 		1F41B02A19CF38C300CF376E /* FFTCloudService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41B02919CF38C300CF376E /* FFTCloudService.m */; };
 		1F41B02B19CF38C300CF376E /* FFTCloudService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41B02919CF38C300CF376E /* FFTCloudService.m */; };
 		1F90DD2519D23E0500061DB3 /* UIViewController+FFTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90DD2419D23E0500061DB3 /* UIViewController+FFTUtils.m */; };
-		1F9D696D19CF4CAA0004E8E0 /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D696C19CF4CAA0004E8E0 /* ContactsTableViewController.m */; };
-		1F9D696E19CF4CAA0004E8E0 /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D696C19CF4CAA0004E8E0 /* ContactsTableViewController.m */; };
+		1F9D696D19CF4CAA0004E8E0 /* DiscoveredContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D696C19CF4CAA0004E8E0 /* DiscoveredContactsTableViewController.m */; };
+		1F9D696E19CF4CAA0004E8E0 /* DiscoveredContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D696C19CF4CAA0004E8E0 /* DiscoveredContactsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		1F41B02919CF38C300CF376E /* FFTCloudService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTCloudService.m; sourceTree = "<group>"; };
 		1F90DD2319D23E0500061DB3 /* UIViewController+FFTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FFTUtils.h"; sourceTree = "<group>"; };
 		1F90DD2419D23E0500061DB3 /* UIViewController+FFTUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FFTUtils.m"; sourceTree = "<group>"; };
-		1F9D696B19CF4CAA0004E8E0 /* ContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
-		1F9D696C19CF4CAA0004E8E0 /* ContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
+		1F9D696B19CF4CAA0004E8E0 /* DiscoveredContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveredContactsTableViewController.h; sourceTree = "<group>"; };
+		1F9D696C19CF4CAA0004E8E0 /* DiscoveredContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveredContactsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,8 @@
 				1F41B00419CF379800CF376E /* AppDelegate.m */,
 				1F41B00619CF379800CF376E /* MainViewController.h */,
 				1F41B00719CF379800CF376E /* MainViewController.m */,
-				1F9D696B19CF4CAA0004E8E0 /* ContactsTableViewController.h */,
-				1F9D696C19CF4CAA0004E8E0 /* ContactsTableViewController.m */,
+				1F9D696B19CF4CAA0004E8E0 /* DiscoveredContactsTableViewController.h */,
+				1F9D696C19CF4CAA0004E8E0 /* DiscoveredContactsTableViewController.m */,
 				1F41B00919CF379800CF376E /* Main.storyboard */,
 				1F41B00C19CF379800CF376E /* Images.xcassets */,
 				1F41B00E19CF379800CF376E /* LaunchScreen.xib */,
@@ -250,7 +250,7 @@
 			files = (
 				1F41B02A19CF38C300CF376E /* FFTCloudService.m in Sources */,
 				1F41B00819CF379800CF376E /* MainViewController.m in Sources */,
-				1F9D696D19CF4CAA0004E8E0 /* ContactsTableViewController.m in Sources */,
+				1F9D696D19CF4CAA0004E8E0 /* DiscoveredContactsTableViewController.m in Sources */,
 				1F41B00519CF379800CF376E /* AppDelegate.m in Sources */,
 				1F41B00219CF379800CF376E /* main.m in Sources */,
 				1F90DD2519D23E0500061DB3 /* UIViewController+FFTUtils.m in Sources */,
@@ -263,7 +263,7 @@
 			files = (
 				1F41B02B19CF38C300CF376E /* FFTCloudService.m in Sources */,
 				1F41B01C19CF379800CF376E /* CloudKitDemoTests.m in Sources */,
-				1F9D696E19CF4CAA0004E8E0 /* ContactsTableViewController.m in Sources */,
+				1F9D696E19CF4CAA0004E8E0 /* DiscoveredContactsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

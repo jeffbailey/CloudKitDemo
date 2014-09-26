@@ -6,25 +6,24 @@
 //  Copyright (c) 2014 FourthFrame. All rights reserved.
 //
 
-#import "ContactsTableViewController.h"
+#import "DiscoveredContactsTableViewController.h"
 #import "UIViewController+FFTUtils.h"
 
-@interface ContactsTableViewController ()
+@interface DiscoveredContactsTableViewController ()
 
 @property (nonatomic, strong) NSArray *userInfoList;
 @property (nonatomic) BOOL contactsDiscovered;
 
 @end
 
-@implementation ContactsTableViewController
+@implementation DiscoveredContactsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 44;
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -33,11 +32,14 @@
     
     self.contactsDiscovered = NO;
     [self.cloudService discoverAllContacts:^(NSArray *userInfos, NSError *error) {
+        
         if (!error) {
             
             self.contactsDiscovered = YES;
             self.userInfoList = userInfos;
-            [self.tableView reloadData];
+            
+            [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0]  withRowAnimation:UITableViewRowAnimationAutomatic];
+            
         } else {
             //CKErrorShouldThrottleClient
             NSNumber *retryAfter = [error.userInfo objectForKey:@"CKRetryAfter"];
@@ -48,6 +50,10 @@
         }
     }];
     
+}
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
 }
 
 #pragma mark - Table view data source
@@ -63,9 +69,11 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"contactCell" forIndexPath:indexPath];
+    UITableViewCell *cell = nil;
     
     if (self.contactsDiscovered) {
+        
+        cell = [tableView dequeueReusableCellWithIdentifier:@"contactCell" forIndexPath:indexPath];
 
         if (self.userInfoList.count) {
             // Configure the cell...
@@ -79,22 +87,11 @@
             cell.detailTextLabel.text = @"None of your contacts have run the app";
         }
     } else {
-        cell.textLabel.text = NSLocalizedString(@"Discovering contacts...", nil);
-        cell.detailTextLabel.text = @"CloudKit can find users of the app from your contacts";
+        cell = [tableView dequeueReusableCellWithIdentifier:@"discoveringCell" forIndexPath:indexPath];
+
     }
     
     return cell;
 }
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
